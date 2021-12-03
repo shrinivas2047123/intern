@@ -1,0 +1,51 @@
+mport { STATEMENT_OR_BLOCK_KEYS } from '@babel/types';
+import React, {useState} from 'react';
+import {
+  ScrollView,
+  Text,
+  View,
+  SafeAreaView,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  Alert
+} from 'react-native';
+
+export default function login()
+{
+  const [email, setemail] = useState("");
+  const [password , setpassword] = useState("");
+function validForm(){
+  return email.length > 0 && password.length > 0;
+  event.preventDefault();
+}
+{
+  return {
+    <div className="login">
+    <Form onSubmit={handleSubmit}>
+    <Form.Group size="lg or sm" controlId="email">
+    <Form.Label>email</Form.Label>
+    <Form.control
+    autofocus type="email"
+    value={email}
+    onChange={(e) => setemail(e.target.value)}
+    />
+
+    <div className="pg">
+    <Form onSubmit={handleSubmit}>
+    <Form.Group size="lg" controlId="password">
+    <Form.Label>password</Form.Label>
+    <Form.control
+    autofocus type="password"
+    value={email}
+    onChange={(e) => setpassword(e.target.value)}
+    />
+    <Form.Group>
+    <Button block size="lg or sm" type="submit/Enter disabled={!validateForm()}">
+    login/SignIn
+    </Button>
+    <Form>
+    </div>
+
+  };
+}
